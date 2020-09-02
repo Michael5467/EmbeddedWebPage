@@ -46,13 +46,31 @@
 				</div>
 			</div>
 			<div class="container column">
-				<input type="range" min="1" max="100" value="50" class="item slider" id="myRange">
-				<p class="item">Value: <span id="demo"></span></p>
+				<div class="container row">
+					<p class="item">Brightness</span></p>
+					<div class="slidercontainer">
+						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="BrightnesSlider">
+					</div>
+				</div>
+				<p class="item">Value: <span id="BrightnesValue"></span></p>
 			</div>
-			<div class="container row">
-				<p class="item">..11</p>
-				<p class="item">..22</p>
-				<p class="item">..33</p>
+			<div class="container column">
+				<div class="container row">
+					<p class="item">Speed</span></p>
+					<div class="slidercontainer">
+						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="SpeedSlider">
+					</div>
+				</div>
+				<p class="item">Value: <span id="SpeedValue"></span></p>
+			</div>
+			<div class="container column">
+				<div class="container row">
+					<p class="item">Density</span></p>
+					<div class="slidercontainer">
+						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="DensitySlider">
+					</div>
+				</div>
+				<p class="item">Value: <span id="DensityValue"></span></p>
 			</div>
 		</div>
 		<div class="container column">
@@ -69,6 +87,31 @@
 	<div class="flexbox-body footer">
 		<p class="copyright">Copyrigth &copy; 2020 by Michael</p>
 	</div>
+	<script>
+		var slider1 = document.getElementById("BrightnesSlider");
+		var output1 = document.getElementById("BrightnesValue");
+		output1.innerHTML = slider1.value;
+		
+		slider1.oninput = function() {
+			output1.innerHTML = this.value;
+		}
+
+		var slider2 = document.getElementById("SpeedSlider");
+		var output2 = document.getElementById("SpeedValue");
+		output2.innerHTML = slider2.value;
+		
+		slider2.oninput = function() {
+			output2.innerHTML = this.value;
+		}
+
+		var slider3 = document.getElementById("DensitySlider");
+		var output3 = document.getElementById("DensityValue");
+		output3.innerHTML = slider3.value;
+		
+		slider3.oninput = function() {
+			output3.innerHTML = this.value;
+		}
+	</script>
 </body>
 
 </html>

@@ -66,7 +66,7 @@ body {
 
 .item {
 	border: 3px solid green;
-	padding: 10px 10px;
+	/* padding: 10px 10px; */
 }
 
 /* ----------------------------------------- */
@@ -100,31 +100,24 @@ body {
 }
 
 .header_menu a.cm {
-	background-color: rgb(28, 135, 201);
-	background-color: rgb(108, 142, 236);
 	text-decoration-style: double;
 	font-weight: bold;
 	font-style: italic;
 }
 
-/* .header_menu li:hover {
-	background-color: blue;
-} */
+.slidercontainer {
+	border: 3px dashed green;
+	display: flex;
+	padding: 0;
+    width: 100%;
+}
 
-
-/* .header_title {
-	background-color: #1c87c9;
-	border: none;
-} */
-
-/* .header_menu {
-	background-color: #1c87c9;
-	border: none;
-} */
-
-/* .middle {
-	align-self: center;
-} */
+.slider {
+	padding: 0;
+    width: 100%;
+	background: lightgray;
+	transition: 2ms;
+}
 
 .copyright {
 	color: #1c87c9;
