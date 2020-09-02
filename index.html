@@ -2,74 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MagicLamp">
-  <meta name="author" content="Michael Barskikh">
-  <title>MagicLamp control</title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="MagicLamp">
+	<meta name="author" content="Michael Barskikh">
+	<title>MagicLamp control</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-  <div class="flexbox-body header">
-    <div class="header_title">
-      <h1>Magic Lamp</h1>
-    </div>
-    <div class="header_menu">
-      <ul>
-        <li><a class="cm" href="#">Main</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Debug</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="flexbox-body middle">
-    <div class="container column">
-      <div class="container row">
-        <div class="item">
-          <p> Effects:</p>
-        </div>
-        <div class="item">
-          <select aria-label="Effects">
-            <optgroup label="Simple">
-              <option value="EFF_CODE_SNOW">Snowfall</option>
-              <option value="EFF_CODE_BALLS">Balls</option>
-            </optgroup>
-            <optgroup label="Full screen 3D">
-              <option value="EFF_CODE_LAVA">Lava</option>
-              <option value="EFF_CODE_CLOUD">Cloud</option>
-            </optgroup>
-            <optgroup label="Games">
-              <option value="EFF_CODE_SNAKE">Snake</option>
-            </optgroup>
-          </select>
-        </div>
-      </div>
-      <div class="container row">
-        <p class="item">.11</p>
-        <p class="item">.22</p>
-        <p class="item">.33</p>
-      </div>
-      <div class="container row">
-        <p class="item">..11</p>
-        <p class="item">..22</p>
-        <p class="item">..33</p>
-      </div>
-    </div>
-    <div class="container column">
-      <div class="container row">
-        <p class="item">AA</p>
-        <p class="item">BB</p>
-        <p class="item">CC</p>
-      </div>
-      <p class="item">-11-</p>
-      <p class="item">-22-</p>
-      <p class="item">-33-</p>
-    </div>
-  </div>
-  <div class="flexbox-body footer">
-    <p class="copyright">Copyrigth &copy; 2020 by Michael</p>
-  </div>
+	<div class="flexbox-body header">
+		<div class="header_title">
+			<h1>Magic Lamp</h1>
+		</div>
+		<div class="header_menu">
+			<ul>
+				<li><a class="cm" href="#">Main</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Debug</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="flexbox-body middle">
+		<div class="container column">
+			<div class="container row">
+				<div class="item">
+					<p> Effects:</p>
+				</div>
+				<div class="item">
+					<select aria-label="Effects">
+						<optgroup label="Simple">
+							<option value="EFF_CODE_SNOW">Snowfall</option>
+							<option value="EFF_CODE_BALLS">Balls</option>
+						</optgroup>
+						<optgroup label="Full screen 3D">
+							<option value="EFF_CODE_LAVA">Lava</option>
+							<option value="EFF_CODE_CLOUD">Cloud</option>
+						</optgroup>
+						<optgroup label="Games">
+							<option value="EFF_CODE_SNAKE">Snake</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="container column">
+				<input type="range" min="1" max="100" value="50" class="item slider" id="myRange">
+				<p class="item">Value: <span id="demo"></span></p>
+			</div>
+			<div class="container row">
+				<p class="item">..11</p>
+				<p class="item">..22</p>
+				<p class="item">..33</p>
+			</div>
+		</div>
+		<div class="container column">
+			<div class="container row">
+				<p class="item">AA</p>
+				<p class="item">BB</p>
+				<p class="item">CC</p>
+			</div>
+			<p class="item">-11-</p>
+			<p class="item">-22-</p>
+			<p class="item">-33-</p>
+		</div>
+	</div>
+	<div class="flexbox-body footer">
+		<p class="copyright">Copyrigth &copy; 2020 by Michael</p>
+	</div>
 </body>
 
 </html>
