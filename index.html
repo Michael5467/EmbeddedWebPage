@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MagicLamp">
+  <meta name="author" content="Michael Barskikh">
+  <title>MagicLamp control</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
-    <header id="mainHeader">
-        <div class="container">
-            <h1>CSS begin</h1>
-        </div>
-    </header>
-    <nav id="mainNav">
-        <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="jumbo">
-        <div class="container">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor aspernatur esse, neque reiciendis enim, debitis laudantium rerum doloribus quod laboriosam illo! Beatae porro maxime quos eum! Expedita, exercitationem odio.</h1>
-        </div>
-    </section>
-    <div class="container">
-        <aside id="sidebar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis illo ipsa libero eius laboriosam quam aliquam tempore perferendis atque, mollitia quasi, expedita aut magnam nobis aspernatur itaque quae labore.</p>
-        </aside>
-        <section id="main">
-            <h2>Section Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ducimus eligendi modi, consequatur eos neque ratione ipsa iste quos tempore vel sed quasi, veritatis qui sunt ab molestias laboriosam dolorem?</p>
-        </section>
-        <div class="clearFix"> </div>
-        <div id="pExample">
-            <span>Span 1</span>
-            <span>Span 2</span>
-        </div>
+  <div class="flexbox-body header">
+    <div class="header_title">
+      <h1>Magic Lamp</h1>
     </div>
-    <footer id="mainFooter">
-        <p>Copyrigth &copy; 2020 by Michael</p>
-    </footer>
+    <div class="header_menu">
+      <ul>
+        <li><a class="cm" href="#">Main</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Debug</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="flexbox-body middle">
+    <div class="container column">
+      <div class="container row">
+        <div class="item">
+          <p> Effects:</p>
+        </div>
+        <div class="item">
+          <select aria-label="Effects">
+            <optgroup label="Simple">
+              <option value="EFF_CODE_SNOW">Snowfall</option>
+              <option value="EFF_CODE_BALLS">Balls</option>
+            </optgroup>
+            <optgroup label="Full screen 3D">
+              <option value="EFF_CODE_LAVA">Lava</option>
+              <option value="EFF_CODE_CLOUD">Cloud</option>
+            </optgroup>
+            <optgroup label="Games">
+              <option value="EFF_CODE_SNAKE">Snake</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="container row">
+        <p class="item">.11</p>
+        <p class="item">.22</p>
+        <p class="item">.33</p>
+      </div>
+      <div class="container row">
+        <p class="item">..11</p>
+        <p class="item">..22</p>
+        <p class="item">..33</p>
+      </div>
+    </div>
+    <div class="container column">
+      <div class="container row">
+        <p class="item">AA</p>
+        <p class="item">BB</p>
+        <p class="item">CC</p>
+      </div>
+      <p class="item">-11-</p>
+      <p class="item">-22-</p>
+      <p class="item">-33-</p>
+    </div>
+  </div>
+  <div class="flexbox-body footer">
+    <p class="copyright">Copyrigth &copy; 2020 by Michael</p>
+  </div>
 </body>
+
 </html>
