@@ -26,62 +26,54 @@
 	<div class="flexbox-body middle">
 		<div class="container column">
 			<div class="container row">
-				<div class="item">
-					<p> Effects:</p>
-				</div>
-				<div class="item">
-					<select aria-label="Effects">
-						<optgroup label="Simple">
-							<option value="EFF_CODE_SNOW">Snowfall</option>
-							<option value="EFF_CODE_BALLS">Balls</option>
-						</optgroup>
-						<optgroup label="Full screen 3D">
-							<option value="EFF_CODE_LAVA">Lava</option>
-							<option value="EFF_CODE_CLOUD">Cloud</option>
-						</optgroup>
-						<optgroup label="Games">
-							<option value="EFF_CODE_SNAKE">Snake</option>
-						</optgroup>
-					</select>
-				</div>
-			</div>
-			<div class="container column">
-				<div class="container row">
-					<p class="item">Brightness</span></p>
-					<div class="slidercontainer">
-						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="BrightnesSlider">
-					</div>
-				</div>
-				<p class="item">Value: <span id="BrightnesValue"></span></p>
-			</div>
-			<div class="container column">
-				<div class="container row">
-					<p class="item">Speed</span></p>
-					<div class="slidercontainer">
-						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="SpeedSlider">
-					</div>
-				</div>
-				<p class="item">Value: <span id="SpeedValue"></span></p>
-			</div>
-			<div class="container column">
-				<div class="container row">
-					<p class="item">Density</span></p>
-					<div class="slidercontainer">
-						<input type="range" min="1" max="100" value="50" step="1" class="slider" id="DensitySlider">
-					</div>
-				</div>
-				<p class="item">Value: <span id="DensityValue"></span></p>
+				<p class="item label">Effects:</p>
+				<select class="item_select" aria-label="Effects">
+					<optgroup label="Simple">
+						<option value="EFF_CODE_SNOW">Snowfall</option>
+						<option value="EFF_CODE_BALLS">Balls</option>
+					</optgroup>
+					<optgroup label="Full screen 3D">
+						<option value="EFF_CODE_LAVA">Lava</option>
+						<option value="EFF_CODE_CLOUD">Cloud</option>
+					</optgroup>
+					<optgroup label="Games">
+						<option value="EFF_CODE_SNAKE">Snake</option>
+					</optgroup>
+				</select>
 			</div>
 		</div>
 		<div class="container column">
 			<div class="container row">
-				<p class="item">AA</p>
-				<p class="item">BB</p>
-				<p class="item">CC</p>
+				<p class="item label">Brightness</span></p>
+				<div class="slidercontainer">
+					<input type="range" min="1" max="100" value="50" step="1" class="item slider" id="BrightnesSlider">
+				</div>
 			</div>
-			<p class="item">-11-</p>
-			<p class="item">-22-</p>
-			<p class="item">-33-</p>
+			<div class="container row">
+				<p class="item">Value: <span id="BrightnesValue"></span></p>
+			</div>
+		</div>
+		<div class="container column">
+			<div class="container row">
+				<p class="item label">Speed</span></p>
+				<div class="slidercontainer">
+					<input type="range" min="1" max="100" value="50" step="1" class="item slider" id="SpeedSlider">
+				</div>
+			</div>
+			<div class="container row">
+				<p class="item">Value: <span id="SpeedValue"></span></p>
+			</div>
+		</div>
+		<div class="container column">
+			<div class="container row">
+				<p class="item label">Density</span></p>
+				<div class="slidercontainer">
+					<input type="range" min="1" max="100" value="50" step="1" class="slider" id="DensitySlider">
+				</div>
+			</div>
+			<div class="container row">
+				<p class="item">Value: <span id="DensityValue"></span></p>
+			</div>
 		</div>
 	</div>
 	<div class="flexbox-body footer">

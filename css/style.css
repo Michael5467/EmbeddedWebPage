@@ -4,9 +4,9 @@ html {
 
 * {
 	box-sizing: border-box;
-	margin: 5px;
-	/* padding: 10px; */
-	/* margin: 0; */
+	/* margin: 5px; */
+	padding: 5px;
+	margin: 0;
 	/* padding: 0; */
 }
 
@@ -26,7 +26,7 @@ body {
 
 .flexbox-body {
 	/* background-color: lightskyblue; */
-	border: 3px solid black;
+	/* border: 3px solid black; */
 	color: blue;
 }
 
@@ -52,21 +52,26 @@ body {
 	/* justify-content: space-around; */
 	/* align-items: center; */
 	/* justify-items: center; */
+	/* margin: 5px 0 0 0; */
+	/* padding: 5px; */
+	/* margin: 0; */
+	/* padding: 0; */
 }
 
 .row {
-	border: 3px solid red;
+	/* border: 3px solid red; */
 	flex-direction: row;
 }
 
 .column {
 	border: 3px solid blue;
 	flex-direction: column;
+	margin: 10px 0 0 0;
 }
 
 .item {
 	border: 3px solid green;
-	/* padding: 10px 10px; */
+	padding: 5px;
 }
 
 /* ----------------------------------------- */
@@ -109,7 +114,7 @@ body {
 	border: 3px dashed green;
 	display: flex;
 	padding: 0;
-    width: 100%;
+    width: 400px;
 }
 
 .slider {
@@ -117,6 +122,15 @@ body {
     width: 100%;
 	background: lightgray;
 	transition: 2ms;
+}
+
+.label {
+	min-width: 110px;
+	/* width: 110px; */
+}
+
+.item_select {
+	min-width: 110px;
 }
 
 .copyright {
