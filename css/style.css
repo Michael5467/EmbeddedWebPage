@@ -62,7 +62,7 @@ body {
 	/* border: 3px solid red; */
 	flex-direction: row;
 	width: 100%;
-	padding: 0px 5px 0px 10px;
+	padding: 0px 0px 0px 10px;
 }
 
 .column {
@@ -144,6 +144,38 @@ body {
 	/* float: right; */
 	justify-content: right;
 	/* align-items: stretch; */
+}
+
+
+.form_toggle_item input[type=radio] {
+	display: none;
+}
+
+.form_toggle_item label {
+	display: inline-block;
+	padding: 0px 15px;   
+	line-height: 24px;    
+	border: 1px solid #999;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+}
+ 
+.form_toggle .item-1 label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid #999;
+}
+
+.form_toggle .item-2 label {
+	border-radius: 6px 0 0 6px;
+}
+
+.form_toggle .item-1 input[type=radio]:checked + label {
+	background: #ffc5c5;
+}
+
+.form_toggle .item-2 input[type=radio]:checked + label {
+	background: #bbffbb;
 }
 
 .copyright {
