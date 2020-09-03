@@ -5,9 +5,9 @@ html {
 * {
 	box-sizing: border-box;
 	/* margin: 5px; */
-	padding: 5px;
+	/* padding: 5px; */
 	margin: 0;
-	/* padding: 0; */
+	padding: 0;
 }
 
 /* ----------------------------------------- */
@@ -50,8 +50,8 @@ body {
 .container {
 	display: flex;
 	/* justify-content: space-around; */
-	/* align-items: center; */
-	/* justify-items: center; */
+	align-items: baseline;
+	justify-items: center;
 	/* margin: 5px 0 0 0; */
 	/* padding: 5px; */
 	/* margin: 0; */
@@ -61,17 +61,20 @@ body {
 .row {
 	/* border: 3px solid red; */
 	flex-direction: row;
+	width: 100%;
+	padding: 0px 5px 0px 10px;
 }
 
 .column {
-	border: 3px solid blue;
+	/* border: 3px solid blue; */
 	flex-direction: column;
-	margin: 10px 0 0 0;
+	/* align-items: baseline; */
+	margin: 10px 5px 0px 0px;
+	max-width: 500px;
 }
 
 .item {
-	border: 3px solid green;
-	padding: 5px;
+	/* border: 3px solid green; */
 }
 
 /* ----------------------------------------- */
@@ -111,7 +114,7 @@ body {
 }
 
 .slidercontainer {
-	border: 3px dashed green;
+	/* border: 3px dashed green; */
 	display: flex;
 	padding: 0;
     width: 400px;
@@ -130,7 +133,17 @@ body {
 }
 
 .item_select {
+	/* border: 3px dashed green; */
 	min-width: 110px;
+}
+
+.form_toggle {
+	/* border: 3px dashed green; */
+	width: 100%;
+	/* justify-content: flex-end; */
+	/* float: right; */
+	justify-content: right;
+	/* align-items: stretch; */
 }
 
 .copyright {

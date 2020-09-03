@@ -27,7 +27,7 @@
 		<div class="container column">
 			<div class="container row">
 				<p class="item label">Effects:</p>
-				<select class="item_select" aria-label="Effects">
+				<select class="item item_select" aria-label="Effects">
 					<optgroup label="Simple">
 						<option value="EFF_CODE_SNOW">Snowfall</option>
 						<option value="EFF_CODE_BALLS">Balls</option>
@@ -40,11 +40,21 @@
 						<option value="EFF_CODE_SNAKE">Snake</option>
 					</optgroup>
 				</select>
+				<div class="container row form_toggle">
+					<div class="item item-2">
+						<input id="fid-2" type="radio" name="radio" value="on" checked>
+						<label for="fid-2">ON</label>
+					</div>
+					<div class="item item-1">
+						<input id="fid-1" type="radio" name="radio" value="off">
+						<label for="fid-1">OFF</label>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container column">
 			<div class="container row">
-				<p class="item label">Brightness</span></p>
+				<p class="item label">Brightness</p>
 				<div class="slidercontainer">
 					<input type="range" min="1" max="100" value="50" step="1" class="item slider" id="BrightnesSlider">
 				</div>
@@ -55,7 +65,7 @@
 		</div>
 		<div class="container column">
 			<div class="container row">
-				<p class="item label">Speed</span></p>
+				<p class="item label">Speed</p>
 				<div class="slidercontainer">
 					<input type="range" min="1" max="100" value="50" step="1" class="item slider" id="SpeedSlider">
 				</div>
@@ -66,7 +76,7 @@
 		</div>
 		<div class="container column">
 			<div class="container row">
-				<p class="item label">Density</span></p>
+				<p class="item label">Density</p>
 				<div class="slidercontainer">
 					<input type="range" min="1" max="100" value="50" step="1" class="slider" id="DensitySlider">
 				</div>
